@@ -8,8 +8,8 @@ const provider = new ethers.providers.WebSocketProvider(`wss://eth-mainnet.g.alc
 
 async function getTransactionsAddress(address){
     let count = 0
-    const ethAdress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
-    const contract = new ethers.Contract(ethAdress, ethABI, provider);
+    const contractAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
+    const contract = new ethers.Contract(contractAddress, ethABI, provider);
     const filter = contract.filters.Transfer(address);
     const query = await contract.queryFilter(filter);
     query.forEach(_ => count++)

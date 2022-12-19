@@ -33,19 +33,19 @@ Start the server
 #### Get all transactions
 
 ```http
-  POST /getAllTransactionsAddress
+  POST /api/wallets/getAllTransactionsAddress
 ```
 
 #### Get last transaction
 
 ```http
-  POST /getLastTransactionAddress
+  POST /api/wallets/getLastTransactionAddress
 ```
 
 #### Compare wallet transactions
 
 ```http
-  POST /compareTransactionsAddress
+  POST /api/wallets/compareTransactionsAddress
 ```
 
 #### Example body for getLastTransactionAddress /  getAllTransactionsAddress:
